@@ -34,7 +34,7 @@ describe('Clase ToDo', () => {
   });
 
   it('Agregar completeToDo al prototipo de ToDo', () => {
-     expect(typeof ToDo.prototype.completeToDo).toBe('function');
+    expect(typeof ToDo.prototype.completeToDo).toBe('function');
   });
 
   it('El método completeToDo camabia el atributo \'complete\' to true', () => {

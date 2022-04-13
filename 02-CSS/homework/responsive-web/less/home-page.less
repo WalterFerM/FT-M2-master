@@ -12,18 +12,40 @@
       padding:0 15px;
     }
 
+    img {
+        
+      padding: 3px;
+      border-radius: 20px;
+    }
+
+    @media @phone {
+      img{
+        width:100%;
+        padding: 10px;
+      }
+    }
   }
 
   .music-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
-      height: 100%;
+    }
+
+    @media @phone{
+      .tecnologia, .ondas{
+        display: none;
+      }
+      .auricular{
+        width: 100%;
+        padding: 10px;
+      }
     }
   }
 
@@ -58,6 +80,25 @@
       }
 
       .btn {
+        button{
+          background-color: @btn-bg-color;
+          border: none;
+          color: @porcelain;
+          border-radius: 10px;
+          // height: 2.4em;
+          // width: 6em;
+          padding: 10px 9px;
+          font-size: 1.6em;
+          border: 1px double @btn-bg-color;
+          cursor:pointer;
+          &:hover{
+            background-color: @wild-sand;
+            color: @btn-bg-color;
+            border: 1px double #e0e0e0;
+          }
+
+        }
+        
       }
     }
 
@@ -69,6 +110,29 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+
+  }
+  @media @phone {
+    .actual{
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 10px;
+      .actual-img{
+        width: 100%;
+        margin: 0;
+      }
+      .actual-text{
+        width: 100%;
+        
+        .btn{
+          padding: 1em;
+          button{
+            width: 100%;
+            
+          }
+        }
       }
     }
   }
