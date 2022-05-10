@@ -1,0 +1,25 @@
+.Card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: minmax(300px, 500px);
+    background-color: #25252595  ;
+    padding: .5rem;
+    position: relative;
+}
+
+.Card > button {
+    position: absolute;
+    right:.5rem;
+    top:.5rem;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: crimson;  
+}
+
+.Card > h2 {
+    grid-column: span 3;
+}
